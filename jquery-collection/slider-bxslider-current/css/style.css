@@ -1,0 +1,35 @@
+html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}table{border-collapse:collapse;border-spacing:0;}caption,th{text-align:left;}q:before,q:after{content:'';}object,embed{vertical-align:top;}hr,legend{display:none;}h1,h2,h3,h4,h5,h6{font-size:100%;}img,abbr,acronym,fieldset{border:0;}ul li{list-style-type:none;}a,label{cursor:pointer;}img{vertical-align:bottom;margin:0;padding:0;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.container {
+  overflow: hidden;
+  clear: both;
+  width: 960px;
+  margin: 0 auto;
+}
+.inner {
+  clear: both;
+  overflow: hidden;
+  padding: 20px;
+}
+#header {
+  height: 75px;
+  background: #34495e;
+  color: #1abc9c;
+  width: 100%;
+}
+#header ul {
+  overflow: hidden;
+}
+#header ul li {
+  float: left;
+  padding: 0 20px;
+}
+.container {
+  margin: 20px auto;
+}
+.pre-current {
+  margin-right:  100px;
+}
+.slide-options li {
+  margin: 10px 0;
+}

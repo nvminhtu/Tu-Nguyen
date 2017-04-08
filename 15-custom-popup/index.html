@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom popup</title>
+  <link rel="stylesheet" href="../highlighter/dessert.css" />
+  <!-- Optional theme -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ 
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Demo Page</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/jquery-collection/">jQuery Collection</a></li>
+          <li class="active"><a href="/jquery-collection/09-menu-expand/index.html">Menu expand</a></li>
+        </ul>
+      </div>
+    </div>
+  <!-- /.navbar navbar-inverse --></nav>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1 id="top">Custom popup</h1>
+      <p>This script will create add menu and expand it</p>
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row book_list">
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book A</p>
+        </a>        
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book A</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+      
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book B</p>
+        </a>
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book B</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book C</p>
+        </a>     
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book C</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book D</p>
+        </a>        
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book D</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book E</p>
+        </a>        
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book E</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book F</p>
+        </a>        
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book F</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book G</p>
+        </a>        
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book G</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book H</p>
+        </a>        
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book H</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book I</p>
+        </a>        
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book I</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book K</p>
+        </a>        
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book K</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book L</p>
+        </a>        
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book L</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+      <li class="col-xs-12 col-sm-12 col-md-1">
+        <a href="#">
+          <img src="img/img-book_jquery.jpg" height="257" width="196" alt="Book jQuery">
+          <p class="title">Title of Book M</p>
+        </a>        
+        <div class="popup_content">
+          <div class="popup_inner">
+            <a href="javascript:void(0)" class="closePopup"><img src="img/ico-close.gif" height="50" width="50" alt="close"></a>
+            <p>Content of Book M</p>
+            <p>In Angular, a Component is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure.
+            This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+
+            Advantages of Components:
+
+            simpler configuration than plain directives
+            promote sane defaults and best practices
+            optimized for component-based architecture
+            writing component directives will make it easier to upgrade to Angular 2
+            When not to use Components:
+
+            for directives that rely on DOM manipulation, adding event listeners etc, because the compile and link functions are unavailable
+            when you need advanced directive definition options like priority, terminal, multi-element
+            when you want a directive that is triggered by an attribute or CSS class, rather than an element</p>
+          <!-- /.popup_inner --></div>
+        <!-- /.popup_content --></div>
+      <!-- /.col-xs-12 col-sm-12 col-md-1 --></li>
+
+    <!-- /.row --></div>
+  <!-- /.container-fluid --></div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/jquery.customPopup.js" type="text/javascript"></script>
+  <script src="../highlighter/prettify.js"></script>
+</body>
+</html>

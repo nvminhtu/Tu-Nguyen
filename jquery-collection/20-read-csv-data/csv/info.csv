@@ -1,0 +1,5 @@
+﻿Ionic API,Description
+$ionicActionSheet,The Action Sheet is a slide-up pane that lets the user choose from a set of options.
+$ionicTabsDelegate,Delegate for controlling the ionTabs directive.
+$ionicPopover,The Popover is a view that floats above an app’s content.
+$ionicActionSheet,The Action Sheet is a slide-up pane that lets the user choose from a set of options

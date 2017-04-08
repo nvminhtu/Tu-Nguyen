@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02 - Read json data and pass to HTML - Handlebars JS Tutorial</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js" type="text/javascript"></script>
+	<script src="js/02-read-json.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>02 - Read json data and pass to HTML</h1>
+	<script id="show-template" type="text/x-handlebars-template"> 
+		<h1>{{title}}</h1>
+		<p>
+			{{entry}}
+		</p>
+	</script>
+
+	<p>Please declare helper before pass to the template</p>
+	<div class="content-placeholder"></div>
+</body>
+</html>

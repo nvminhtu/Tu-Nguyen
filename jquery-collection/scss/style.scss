@@ -1,0 +1,64 @@
+/* TO-DO STYLE */
+
+
+/* 1- Variables Default */
+$font-stack: Helvetica, sans-serif;
+$main-color: #000000;
+$focus-color: #34495e;
+$heading-color: #1abc9c;
+$heading-background: #34495e;
+
+$board-background: #34495e;
+$board-color: #ffffff;
+
+/* 2- Mixin format */
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin center-content {
+  text-align: center;
+  margin: 0
+}
+
+
+/* -----------------------------------
+  Go - Call and Export CSS to content 
+  ------------------------------------*/
+
+/* Common Style */
+p { margin: 0; }
+h1, h2, h3 { 
+  @include center-content
+  background: $heading-background;
+  color: $heading-color;
+  @include border-radius(10px);
+  padding: 10px;
+}
+h4 {
+  color: $focus-color;
+}
+.box { @include border-radius(5px);}
+
+/* Fixed Style */
+
+/* 3- Placeholder */
+%board {
+  background: $board-background;
+  color: $board-color;
+  margin: 10px 0;
+  padding: 20px;
+  @include border-radius(10px);
+}
+.message-board { @extend %board;}
+
+/*----------------------------------------
+  #jquery-collection
+----------------------------------------*/
+#jquery-collection ol > li {
+  margin: 10px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}

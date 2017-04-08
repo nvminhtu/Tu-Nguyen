@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Expression - Handlebars JS Tutorial</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js" type="text/javascript"></script>
+	<script src="js/expression.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>Expression</h1>
+	<script id="expression-template" type="text/x-handlebars-template">
+		{{description.escaped}}
+		{{example}}
+		<br><br>	
+		{{description.unescaped}}
+		{{{example}}}
+	</script>
+	<ul>
+		<li>Use {{}} bracket for showing value from Javascript.</li>
+		<li>Use {{{}}} bracket for display HTML from variable in Javascript</li>
+		<li>Include jQuery for selecting DOM</li>
+	</ul>
+	<div class="content-placeholder"></div>
+</body>
+</html>

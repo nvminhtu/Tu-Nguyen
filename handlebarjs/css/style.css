@@ -1,0 +1,155 @@
+/* TO-DO STYLE */
+/* 1- Grid Container */
+/* 2- Row */
+/* 3- Columns */
+/* 4- Buttons */
+/* 5- Table */
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #000000;
+}
+
+/* 3- Columns
+----------------------*/
+.col-1 {
+  width: 16.66667%;
+}
+
+.col-2 {
+  width: 33.33333%;
+}
+
+.col-3 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 66.66667%;
+}
+
+.col-5 {
+  width: 83.33333%;
+}
+
+.col-6 {
+  width: 100%;
+}
+
+/* 4- Buttons
+----------------------*/
+.pure-button {
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  font-size: 100%;
+  padding: .5em 1em;
+  color: #444;
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #999;
+  border: 0 transparent;
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 2px;
+  webkit-border-radius: 2px;
+  moz-border-radius: 2px;
+}
+
+.btn-success {
+  color: #ffffff;
+  background-color: #1cb841;
+  border-radius: 4px;
+  webkit-border-radius: 4px;
+  moz-border-radius: 4px;
+}
+
+.btn-error {
+  color: #ffffff;
+  background-color: #ca3c3c;
+  border-radius: 4px;
+  webkit-border-radius: 4px;
+  moz-border-radius: 4px;
+}
+
+.btn-warning {
+  color: #ffffff;
+  background-color: #df7514;
+  border-radius: 4px;
+  webkit-border-radius: 4px;
+  moz-border-radius: 4px;
+}
+
+.btn-secondary {
+  color: #ffffff;
+  background-color: #42b8dd;
+  border-radius: 4px;
+  webkit-border-radius: 4px;
+  moz-border-radius: 4px;
+}
+
+/* 5- Table
+----------------------*/
+table {
+  width: 100%;
+  float: left;
+  margin: 0 0 2em;
+}
+
+table thead {
+  border-bottom: 4px solid #000000;
+}
+
+table thead th {
+  padding: 0.35em 0 0.35em 0.2em;
+  font-weight: 400;
+  text-align: left;
+  font-family: 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 1.25em;
+  background: #ddd;
+}
+
+table tbody {
+  border-bottom: 3px solid #000000;
+}
+
+table tbody tr {
+  border-bottom: 2px solid #ddd;
+}
+
+table tbody tr td {
+  padding: 0.35em 0 0.35em 0.2em;
+}
+
+table tbody tr td a {
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 .5em 0 0;
+}
+
+table tbody tr td a:hover, table tbody tr td a:active, table tbody tr td a:focus {
+  color: black;
+  border: none;
+}
+
+table tfoot td {
+  padding: 0.35em 0 .35em;
+  text-align: left;
+  font-family: 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 1.25em;
+}
+
+@media screen and (min-width: 1000px) {
+  table {
+    width: 100%;
+  }
+  table thead {
+    border-bottom: 3px solid #000000;
+  }
+  table tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+}

@@ -1,0 +1,68 @@
+html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}table{border-collapse:collapse;border-spacing:0;}caption,th{text-align:left;}q:before,q:after{content:'';}object,embed{vertical-align:top;}hr,legend{display:none;}h1,h2,h3,h4,h5,h6{font-size:100%;}img,abbr,acronym,fieldset{border:0;}ul li{list-style-type:none;}a,label{cursor:pointer;}img{vertical-align:bottom;margin:0;padding:0;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+.navbar-inverse .navbar-toggle {
+    border-color: #333;
+}
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+.container {
+  overflow: hidden;
+  clear: both;
+  margin: 0 auto;
+}
+#header {
+  width: 100%;
+}
+#header ul {
+  overflow: hidden;
+}
+#header ul li {
+  float: left;
+  padding: 0 20px;
+}
+/*  keyvisual
+----------------------------------------*/
+#keyvisual {
+  position:relative;
+  height:352px;
+  overflow:hidden;
+  margin-bottom:30px;
+}
+#keyvisual > ul > li {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+  width:900px;
+  height:352px;
+}
+#keyvisual > ul > li.current {
+  z-index:2;
+}
+#keyvisual .main {
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+#keyvisual .sub li {
+  position:absolute;
+  bottom:0;
+  right:0;
+  border:solid 1px #fff;
+}
+#keyvisual .sub li.sub_01 {
+  bottom:175px;
+  z-index:5;
+  border-right:0;
+}
+#keyvisual .sub li.sub_02 {
+  right:177px;
+  z-index:4;
+  border-bottom:0;
+}
+#keyvisual .sub li.sub_03 {
+  z-index:3;
+  border-bottom:0;
+  border-right:0;
+}

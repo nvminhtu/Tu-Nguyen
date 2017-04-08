@@ -1,0 +1,379 @@
+vhtml{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}table{border-collapse:collapse;border-spacing:0;}caption,th{text-align:left;}q:before,q:after{content:'';}object,embed{vertical-align:top;}hr,legend{display:none;}h1,h2,h3,h4,h5,h6{font-size:100%;}img,abbr,acronym,fieldset{border:0;}ul li{list-style-type:none;}a,label{cursor:pointer;}img{vertical-align:bottom;margin:0;padding:0;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+.navbar-inverse .navbar-toggle {
+    border-color: #333;
+}
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+#header {
+  width: 100%;
+}
+#header ul {
+  overflow: hidden;
+}
+#header ul li {
+  float: left;
+  padding: 0 20px;
+}
+/*----------------------------------------
+  #person_message
+----------------------------------------*/
+#person_message {
+  width: 100%;
+  margin: 60px auto;
+}
+#person_message h2 {
+  font-size: 159%;
+  text-align: center;
+  color: #162045;
+  margin-bottom: 23px;
+}
+#person_message h2 br {
+  display: none;
+}
+#person_message > p {
+  text-align: center;
+  line-height: 1.8em;
+  margin-bottom: 26px;
+}
+#person_message > ul {
+  width: 980px;
+  margin: 0 auto 16px;
+}
+#person_message > ul:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+}
+#person_message > ul li {
+  float: left;
+  cursor: pointer;
+}
+#person_message > ul li .photo {
+  width: 100%;
+  margin-bottom: 8px;
+}
+#person_message > ul li .photo img {
+  width: 100%;
+  height: auto;
+}
+#person_message > ul li .name {
+  color: #162045;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+#person_message > ul li .name > span {
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 84%;
+  display: block;
+}
+#person_message > ul li .txt {
+  display: none;
+}
+#person_message > ul li.edge {
+  clear: left;
+  margin-left: 0;
+}
+#person_message .main_person li {
+  width: 312px;
+  margin-left: 22px;
+}
+#person_message .thumb_person li {
+  width: 112px;
+  margin-left: 12px;
+  margin-bottom: 15px;
+}
+#person_message .thumb_person li .name {
+  text-align: left;
+}
+#person_message .thumb_person li .name > span {
+  font-size: 60%;
+  line-height: 1.6em;
+}
+#person_message .more_person {
+  display: none;
+}
+#modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: url(../img/bg-modal.png) repeat 0 0;
+}
+#modal .container {
+  width: 904px;
+  webkit-box-sizing: initial ;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+  padding: 25px 30px 30px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -490px;
+  border: 8px solid #151e49;
+}
+#modal .container .article {
+  width: 100%;
+}
+#modal .container .article h3 {
+  color: #151e45;
+  text-align: center;
+  font-size: 134%;
+  margin-bottom: 25px;
+}
+#modal .container .article h3 span {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+#modal .container .article .details {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#modal .container .article .details:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+}
+#modal .container .article .details .person {
+  float: left;
+  width: 500px;
+}
+#modal .container .article .details .person img {
+  width: 100%;
+  height: auto;
+}
+#modal .container .article .details .person p {
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.6em;
+  margin-top: 10px;
+}
+#modal .container .article .details .item {
+  width: 434px;
+  float: right;
+  margin-right: -30px;
+}
+#modal .container .article .details .item img {
+  width: 100%;
+  height: auto;
+}
+#modal .container .article .fllow {
+  width: 100%;
+}
+#modal .container .article .fllow dt {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#modal .container .article .fllow dd .btn {
+  width: 400px;
+  margin: 0 auto;
+}
+#modal .container .article .fllow dd .btn a {
+  display: block;
+  width: 100%;
+  background-color: #162045;
+  font-size: 134%;
+  font-weight: bold;
+  line-height: 1em;
+  color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+}
+#modal .container .article .fllow dd .txt {
+  text-align: center;
+  font-size: 134%;
+}
+#modal .container .article .fllow dd .txt a {
+  color: #00a1e9;
+  text-decoration: underline;
+}
+#modal .container .close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+#modal .container .prev, #modal .container .next {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 70px;
+  top: 50%;
+  margin-top: -35px;
+}
+#modal .container .prev {
+  left: -88px;
+}
+#modal .container .next {
+  right: -88px;
+}
+#modal .container .article .details .person .prev,
+#modal .container .article .details .person .next {
+  display: none;
+}
+
+@media (min-width: 641px) and (max-width: 767px){
+#modal {
+  position: absolute;
+  top: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
+}
+#modal * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#modal .container {
+  border: 3px solid #151e49;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 12px 19px;
+}
+#modal .container .article h3 {
+  font-size: 16px;
+  margin-bottom: 12.5px;
+}
+#modal .container .article h3 span {
+  font-size: 10px;
+}
+#modal .container .article .details .person {
+  width: 100%;
+  float: none;
+  margin-bottom: 10px;
+}
+#modal .container .article .details .person .photo {
+  width: 100%;
+  position: relative;
+}
+#modal .container .article .details .person .photo > .prev, #modal .container .article .details .person .photo > .next {
+  display: block;
+  width: 25px;
+  height: 0;
+  padding-top: 44px;
+  overflow: hidden;
+  margin-top: -22px;
+}
+#modal .container .article .details .person .photo > .prev {
+  background: url(../img/btn-prev.png) no-repeat 0 0;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: -30px;
+}
+#modal .container .article .details .person .photo > .next {
+  background: url(../img/btn-next.png) no-repeat 0 0;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  right: -30px;
+}
+#modal .container .article .details .item {
+  width: 100%;
+  float: none;
+}
+#modal .container .article .fllow dt {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+#modal .container .article .fllow ol {
+  background: url(../img/ico-arrow_sp.png) no-repeat center center;
+  -moz-background-size: 8px, 20px;
+  -o-background-size: 8px, 20px;
+  -webkit-background-size: 8px, 20px;
+  background-size: 8px, 20px;
+}
+#modal .container .article .fllow ol li {
+  width: 47%;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  -moz-background-size: 16.5px, 22px;
+  -o-background-size: 16.5px, 22px;
+  -webkit-background-size: 16.5px, 22px;
+  background-size: 16.5px, 22px;
+}
+#modal .container .article .fllow ol li p {
+  font-size: 10px;
+  padding-top: 45px;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+#modal .container .article .fllow ol li p br {
+  display: none;
+}
+#modal .container .article .fllow ol li p a {
+  padding: 0;
+}
+#modal .container .article .fllow ol li.step1 p {
+  padding-left: 0;
+  background-position: center 5px;
+  -moz-background-size: 35px, 29px;
+  -o-background-size: 35px, 29px;
+  -webkit-background-size: 35px, 29px;
+  background-size: 35px, 29px;
+}
+#modal .container .article .fllow ol li.step1 a {
+  width: 100%;
+  padding-left: 0;
+}
+#modal .container .article .fllow ol li.step2 p {
+  padding-left: 0;
+  background-position: center 5px;
+  -moz-background-size: 33px, 27px;
+  -o-background-size: 33px, 27px;
+  -webkit-background-size: 33px, 27px;
+  background-size: 33px, 27px;
+}
+#modal .container .article .fllow ol li.step2 a {
+  width: 100%;
+  padding-left: 0;
+}
+#modal .container .close {
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+}
+#modal .container .close img {
+  width: 100%;
+  height: auto;
+}
+#modal .container > .prev, #modal .container > .next {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  
+}

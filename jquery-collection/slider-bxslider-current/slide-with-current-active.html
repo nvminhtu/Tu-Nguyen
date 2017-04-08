@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery bxSlider</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="../highlighter/dessert.css" />
+</head>
+<body>
+  <div id="header">
+    <div class="inner">
+      <h1 id="top">EXAMPLE using bxSlider for making Slider</h1>
+      <p>Darken other slider except only current Slide</p>
+    <!-- /.inner --></div>
+  <!-- /#header --></div>
+
+  <div id="slider" >
+    <div class="wrap_slider">
+      <ul class="bxslider">
+        <li><a href=""><img src="img/slide01.jpg" height="350" width="660" alt=""></a></li>
+        <li><a href=""><img src="img/slide02.jpg" height="350" width="660" alt=""></a></li>
+        <li><a href=""><img src="img/slide03.jpg" height="350" width="660" alt=""></a></li>
+    </ul>
+    <!-- /.wrap_slider --></div>
+  <!-- /#slider --></div>
+
+  <div class="container">
+    <h1 id="top">Slider</h1>
+    <div id="part-01">
+      <ul class="slide-options">
+        <li>
+          <h3><a href="index.html">1.Slider with different margin</a></h3>
+           <p>Setup slider with different margin between slide</p>
+        </li>
+        <li>
+          <h3>2.Slider with current active - background - black</h3>
+          <p>Setup slider with active - current slide</p>
+          <pre>
+            function slider() {
+                var 
+                  $selectSlider = $('.bxslider'),
+                  listLen = $('.bxslider').find('li').length,
+                  diffMargin = 100,
+                  marginSlide = 50;
+                
+                var slider = $('.bxslider').bxSlider({
+                    maxSlides: listLen,
+                    speed: 600,
+                    slideMargin: marginSlide,
+                    auto: true,
+                    onSliderLoad: function() {
+                      var currentClass = listLen + 'n+1';
+                      $selectSlider.find('li:nth-child(' + currentClass + ')').addClass('current');
+                      $selectSlider.find('.current').prev()
+                        .addClass('pre-current')
+                        .css({
+                          'margin-right': diffMargin + 'px',
+                          'margin-left':'-50px'
+                        });
+                    },
+                    onSlideBefore: function() {
+                      resetMargin();
+                      slider.startAuto();
+                      var current = slider.getCurrentSlide(),
+                          currentClass = listLen + 'n+' + (current + 1);
+                      
+                      $selectSlider.find('li:nth-child(' + currentClass + ')').addClass('current');
+                      $selectSlider.find('.current').prev()
+                        .addClass('pre-current')
+                        .css({
+                          'margin-right': diffMargin + 'px',
+                        });
+                    }
+                });
+                
+                //reset Margin before adding margin to each slide
+                var resetMargin = function(){
+                  $selectSlider = $('.bxslider');
+                  $selectSlider.find("li").css('margin-right', marginSlide +"px");
+                  $selectSlider.find("li").css('margin-left','0px');
+                  $selectSlider.find("li").removeClass('current');
+                  $selectSlider.find("li").removeClass('pre-current');
+                };
+            }
+          </pre>
+        </li>
+      </ul>
+      
+      
+    <!-- /#part-01 --></div>
+
+   
+  <!-- /.container --></div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+  <script src="js/sliderCurrent.js" type="text/javascript"></script>
+</body>
+</html>

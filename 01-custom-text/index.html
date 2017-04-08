@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Text jQuery plugin</title>
+  <link rel="stylesheet" href="../highlighter/dessert.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="greeting"></div>
+    How to call it?
+    <pre class="prettyprint">
+      $( document ).ready(function() {
+        $('#greeting').customtext({
+            name: 'Tu Nguyen'
+        });
+      });
+  </pre>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.customtext.js"></script>
+  <script src="highlighter/prettify.js"></script>
+  <script type="text/javascript">
+    $( document ).ready(function() {
+      $('#greeting').customtext({
+          name: 'Tu Nguyen'
+      });
+    });
+  </script>
+
+</body> 
+</html>

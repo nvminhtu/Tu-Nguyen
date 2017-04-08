@@ -1,0 +1,24 @@
+.home-back {
+  padding-left: 10px; 
+}
+.blog-title {
+  color: #41b7d8;
+  line-height: 1.5;
+  font-size: 142%;
+  font-weight: bold;
+}
+.blog-post {
+  color: #ffffff;
+}
+.blog-post ul {
+  margin: 15px 15px;
+}
+.blog-post a {
+  color: #00debc;
+}
+.callout a {
+  color: #0a4063;
+}
+.item_title {
+  color: #ff9e34;
+}

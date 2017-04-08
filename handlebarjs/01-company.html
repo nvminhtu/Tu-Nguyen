@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01-Company member list - Handlebars JS Tutorial</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js" type="text/javascript"></script>
+	<script src="js/01-company.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>01-Company member list</h1>
+	<script id="member-template" type="text/x-handlebars-template"> 
+		<table>
+		    <thead> 
+		        <th>Name</th> 
+		        <th>Job Title</th> 
+		        <th>Facebook</th> 
+		    </thead> 
+		    <tbody> 
+		        {{#users}} 
+		        <tr> 
+		            <td>{{fullName person}}</td>
+		            <td>{{jobTitle}}</td> 
+		            <td>{{facebook}}</td> 
+		        </tr> 
+		        {{/users}} 
+		    </tbody> 
+		</table> 
+	</script>
+
+	<p>Please declare helper before pass to the template</p>
+	<div class="content-placeholder"></div>
+</body>
+</html>

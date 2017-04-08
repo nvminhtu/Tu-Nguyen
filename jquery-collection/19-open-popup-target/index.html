@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Open popup in a new target window</title>
+  <link rel="stylesheet" href="../highlighter/dessert.css" />
+  <!-- Optional theme -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ 
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/open-window-target.js" type="text/javascript"></script>
+  <script src="../highlighter/prettify.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Demo Page</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/jquery-collection/">jQuery Collection</a></li>
+          <li class="active"><a href="/jquery-collection/19-jquery-background-size/index.html">Open popup in a new target window</a></li>
+        </ul>
+      </div>
+    </div>
+  <!-- /.navbar navbar-inverse --></nav>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1 id="top">Open popup in a new target window</h1>
+      <p>Click a link and link to a new window in a new popup</p>
+    </div>
+  </div>
+  
+  <div class="content">
+    <a href="javascript:void(0);" data-ref="pages/doc1.html" class="newOpen">Click to view document 1</a>
+    <script type="text/javascript">
+    // function FullOpen(strURL) {
+    //   var options;
+    //   if (navigator.appName.charAt(0)=='M') {
+    //     options = "fullscreen=1,scrollbars=0";
+    //   } else if (navigator.appName.charAt(0)=='N') {
+    //       options = "scrollbars=0,left=0,top=0"+ ",width=" + screen.width + ",height=" + screen.height;
+    //   }
+    //   window.open(strURL, "", options);
+    // }
+    </script>
+  <!-- /.container-fluid --></div>
+
+  
+</body>
+</html>

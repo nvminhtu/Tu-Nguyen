@@ -1,0 +1,152 @@
+/* TO-DO STYLE */
+
+/* 1- Grid Container */
+/* 2- Row */
+/* 3- Columns */
+/* 4- Buttons */
+/* 5- Table */
+
+// declare global variables
+$font-stack: Helvetica, sans-serif;
+$background-color: #000000;
+$primary-color: #000000;
+$gray-color: #ddd;
+$max-width: 1200px;
+
+// for responsive
+$medium-up: 600px;
+$large-up: 1000px;
+
+@mixin heading-font-regular {
+	font-family: 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;;
+}
+
+@mixin set-border-radius ($radius) {
+  border-radius: $radius;
+  webkit-border-radius: $radius;
+  moz-border-radius: $radius;
+}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+// Using for in SASS
+/* 3- Columns
+----------------------*/
+$no_columns: 6;
+@for $i from 1 through $no_columns {
+  .col-#{$i} {
+    width: ((100 / $no_columns) * $i) * 1%;
+  }
+}
+
+//Using each in SASS 
+/* 4- Buttons
+----------------------*/
+.pure-button {
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  font-size: 100%;
+  padding: .5em 1em;
+  color: #444;
+  color: rgba(0,0,0,.8);
+  border: 1px solid #999;
+  border: 0 rgba(0,0,0,0);
+  background-color: #E6E6E6;
+  text-decoration: none;
+  @include set-border-radius(2px);
+}
+
+
+$radius: 4px;
+$button-list: success rgb(28, 184, 65), error rgb(202, 60, 60), warning rgb(223, 117, 20),secondary rgb(66, 184, 221);
+@each $button in $button-list {
+  .btn-#{nth($button,1)} { 
+  	color: #ffffff;
+    background-color: nth($button,2);
+    @include set-border-radius($radius);
+  }    
+}
+
+//Using each in SASS 
+/* 5- Table
+----------------------*/
+$padding-cell: 0.35em 0 .35em 0.2em;
+table {
+	width: 100%;
+	float: left;
+    margin: 0 0 2em;
+	thead {
+		border-bottom:4px solid $primary-color;
+		th {
+		  padding: $padding-cell;
+      font-weight: 400;
+		  text-align: left;
+		  @include heading-font-regular;
+		  font-size: 1.25em;
+      background: $gray-color;
+		}
+		
+	}
+
+	tbody {
+		border-bottom: 3px solid $primary-color;
+		tr {
+			border-bottom: 2px solid #ddd;
+       
+			td {
+				padding: $padding-cell;
+
+				a {
+					color: $primary-color;
+					text-decoration: none;
+					display: inline-block;
+					margin: 0 .5em 0 0;
+					&:hover, &:active, &:focus {
+						color: darken($primary-color, 10%);
+						border: none;
+					}
+				}
+			}
+		}
+	}
+
+	tfoot {
+		td {
+			padding: 0.35em 0 .35em;
+			text-align: left;
+			@include heading-font-regular;
+			font-size: 1.25em;
+		}
+	}
+}
+
+@media screen and (min-width: $large-up) {
+  table {
+		width: 100%;
+
+		thead {
+			border-bottom: 3px solid $primary-color;
+			th {
+
+			}
+			
+		}
+
+		tbody {
+			tr {
+				border-bottom: 1px solid #ddd;
+				td {
+					
+				}
+			}
+		}
+	}
+}

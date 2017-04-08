@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Block Helpers - Handlebars JS Tutorial</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js" type="text/javascript"></script>
+	<script src="js/block-helper.js" type="text/javascript"></script>
+	<style>
+	</style>
+</head>
+<body>
+	<h1>Block Helpers</h1>
+	<p>Block Helpers is different to helpers because it has open and close tag like #if, #each or you can image it like html tags. </p>
+	<p>We can declare what things come by option to Block helpers function</p>
+	<p>Handle bars does not allow you can write javascript in template directly. So we should write in another javascript. Then it render to template.</p>
+	<script id="block-helpers" type="text/x-handlebars-template">
+	<p>
+		Example:<br>
+		This text will be {{#uppercase}} uppercase {{/uppercase}} <br>
+		This text will be {{#lowercase}} lowercase {{/lowercase}} 
+	</p>
+	
+	</script>
+	<p></p>
+	<div class="content-placeholder"></div>
+</body>
+</html>
